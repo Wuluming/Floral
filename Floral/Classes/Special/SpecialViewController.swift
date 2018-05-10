@@ -9,9 +9,18 @@
 import UIKit
 
 class SpecialViewController: HTBaseViewController {
+    
+    var collectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setNav()
+        
+        addCollection()
+    }
+    
+    func addCollection() {
+        
         
     }
     
