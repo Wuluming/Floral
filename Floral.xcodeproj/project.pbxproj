@@ -15,11 +15,14 @@
 		63965A0820A19B2D00458AF2 /* FloralTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63965A0720A19B2D00458AF2 /* FloralTests.swift */; };
 		63965A1320A19B2E00458AF2 /* FloralUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63965A1220A19B2E00458AF2 /* FloralUITests.swift */; };
 		63965A2420A1AE7900458AF2 /* HTBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63965A2320A1AE7900458AF2 /* HTBaseViewController.swift */; };
+		9A74D11020A8433900E95F44 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A74D10F20A8433900E95F44 /* Constant.swift */; };
+		9A74D11220A8515100E95F44 /* SpecialFlowLayoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A74D11120A8515100E95F44 /* SpecialFlowLayoutCell.swift */; };
 		9ADB0BB320A1D9D0008AA595 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADB0BB220A1D9D0008AA595 /* MainViewController.swift */; };
 		9ADB0BBA20A33C91008AA595 /* SpecialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADB0BB920A33C91008AA595 /* SpecialViewController.swift */; };
 		9ADB0BBC20A33FFB008AA595 /* WallpaperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADB0BBB20A33FFB008AA595 /* WallpaperViewController.swift */; };
 		9ADB0BBE20A340EB008AA595 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADB0BBD20A340EB008AA595 /* MeViewController.swift */; };
 		9ADB0BC020A34184008AA595 /* NavBaseViewCotroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADB0BBF20A34184008AA595 /* NavBaseViewCotroller.swift */; };
+		9ADB0C0220A83FC2008AA595 /* SpecialCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADB0C0120A83FC2008AA595 /* SpecialCollectionViewFlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,11 +57,14 @@
 		63965A1220A19B2E00458AF2 /* FloralUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloralUITests.swift; sourceTree = "<group>"; };
 		63965A1420A19B2E00458AF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63965A2320A1AE7900458AF2 /* HTBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTBaseViewController.swift; sourceTree = "<group>"; };
+		9A74D10F20A8433900E95F44 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		9A74D11120A8515100E95F44 /* SpecialFlowLayoutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialFlowLayoutCell.swift; sourceTree = "<group>"; };
 		9ADB0BB220A1D9D0008AA595 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		9ADB0BB920A33C91008AA595 /* SpecialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialViewController.swift; sourceTree = "<group>"; };
 		9ADB0BBB20A33FFB008AA595 /* WallpaperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperViewController.swift; sourceTree = "<group>"; };
 		9ADB0BBD20A340EB008AA595 /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		9ADB0BBF20A34184008AA595 /* NavBaseViewCotroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBaseViewCotroller.swift; sourceTree = "<group>"; };
+		9ADB0C0120A83FC2008AA595 /* SpecialCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		AA298DAD2EF84F658EA0BBFB /* Pods_Floral.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Floral.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8C47F8E6576B446131E8753 /* Pods-Floral.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Floral.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Floral/Pods-Floral.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -154,6 +160,7 @@
 		63965A2020A1AC3A00458AF2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				9A74D10E20A8432300E95F44 /* Base */,
 				63965A2320A1AE7900458AF2 /* HTBaseViewController.swift */,
 				9ADB0BBF20A34184008AA595 /* NavBaseViewCotroller.swift */,
 				9ADB0BB120A1D9AE008AA595 /* Main */,
@@ -172,6 +179,14 @@
 				AA298DAD2EF84F658EA0BBFB /* Pods_Floral.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A74D10E20A8432300E95F44 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9A74D10F20A8433900E95F44 /* Constant.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		9ADB0BB120A1D9AE008AA595 /* Main */ = {
@@ -201,6 +216,8 @@
 			isa = PBXGroup;
 			children = (
 				9ADB0BB920A33C91008AA595 /* SpecialViewController.swift */,
+				9ADB0C0020A83DFC008AA595 /* Model */,
+				9ADB0BFF20A83DFC008AA595 /* Views */,
 			);
 			path = Special;
 			sourceTree = "<group>";
@@ -218,6 +235,22 @@
 			children = (
 			);
 			path = Exchange;
+			sourceTree = "<group>";
+		};
+		9ADB0BFF20A83DFC008AA595 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9ADB0C0120A83FC2008AA595 /* SpecialCollectionViewFlowLayout.swift */,
+				9A74D11120A8515100E95F44 /* SpecialFlowLayoutCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9ADB0C0020A83DFC008AA595 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -414,10 +447,13 @@
 			files = (
 				9ADB0BBE20A340EB008AA595 /* MeViewController.swift in Sources */,
 				63965A2420A1AE7900458AF2 /* HTBaseViewController.swift in Sources */,
+				9A74D11020A8433900E95F44 /* Constant.swift in Sources */,
 				639659F320A19B2400458AF2 /* AppDelegate.swift in Sources */,
 				9ADB0BBC20A33FFB008AA595 /* WallpaperViewController.swift in Sources */,
+				9A74D11220A8515100E95F44 /* SpecialFlowLayoutCell.swift in Sources */,
 				9ADB0BB320A1D9D0008AA595 /* MainViewController.swift in Sources */,
 				9ADB0BC020A34184008AA595 /* NavBaseViewCotroller.swift in Sources */,
+				9ADB0C0220A83FC2008AA595 /* SpecialCollectionViewFlowLayout.swift in Sources */,
 				9ADB0BBA20A33C91008AA595 /* SpecialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -593,6 +629,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MFHMZ56BFH;
 				INFOPLIST_FILE = Floral/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -612,6 +649,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MFHMZ56BFH;
 				INFOPLIST_FILE = Floral/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
