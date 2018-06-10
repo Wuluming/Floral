@@ -50,18 +50,7 @@ class SpecialViewController: HTBaseViewController, UICollectionViewDelegate, UIC
         let collectCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! SpecialFlowLayoutCell
         let width = String(Float(collectCell.imageview.frame.width))
         let height = String(Float(collectCell.imageview.frame.height))
-//        DispatchQueue.global().async {
-//
-//            if let url = URL(string: "https://placebeard.it/\(width)/\(height)") {
-//                let data = try! Data(contentsOf: url)
-//                let image = UIImage(data: data)
-//
-//                DispatchQueue.main.async(execute: {
-//                    collectCell.imageview.image = image
-//                })
-//            }
-//
-//        }
+        
         if let url = URL(string: "https://placebeard.it/\(width)/\(height)") {
             collectCell.imageview.kf.setImage(with: url)
         }

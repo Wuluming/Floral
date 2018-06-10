@@ -1,0 +1,42 @@
+{
+    "data" : {
+        "firstPlateTitle" : "限时免费",
+        "secondPlateTitle" : "最新内容",
+        "someTimesFreeSubjects" : [
+                                   {
+                                   "imgUrl" : "http:\/\/static.htxq.net\/UploadFiles\/2018\/05\/18\/20180518144800691467.jpg",
+                                   "id" : 98,
+                                   "title" : "「花与器的设计- 花器之上水平」- 巴特· 哈森",
+                                   "content" : "打破传统花与器的关系，以“设计”为主导去改变现有的结构关系。",
+                                   "typeName" : "三大花艺风格",
+                                   "readCount" : 5801
+                                   },
+                                   {
+                                   "imgUrl" : "http:\/\/static.htxq.net\/UploadFiles\/2018\/04\/02\/20180402173946009236.jpg",
+                                   "id" : 79,
+                                   "title" : "「悬挂植物的组合设计」-  布吉特·汉利奇",
+                                   "content" : "当室内的空间高大的时候，悬挂的组合植物设计具有非常强的空间支撑作用。更能让漂亮的垂挂植物随心所欲的自然生长。",
+                                   "typeName" : "园艺创意设计",
+                                   "readCount" : 1969
+                                   },
+                                   {
+                                   "imgUrl" : "http:\/\/static.htxq.net\/UploadFiles\/2018\/01\/01\/20180101150417403242.jpg",
+                                   "id" : 57,
+                                   "title" : "「如何成为一名花艺师」—曹雪",
+                                   "content" : "从花艺师未来出路来进行正确的职业规划。",
+                                   "typeName" : "小白入门",
+                                   "readCount" : 15269
+                                   },
+                                   {
+                                   "imgUrl" : "http:\/\/static.htxq.net\/UploadFiles\/2017\/12\/25\/20171225165842765263.jpg",
+                                   "id" : 54,
+                                   "title" : "「花束的设计制作与包装」—曹雪",
+                                   "content" : "讲解关于：花束在制作过程中设计的搭配和包装技巧，用了较大的篇幅来介绍关于方式和方法的运用和一些细节的处理。\r\n",
+                                   "typeName" : "花束系统设计",
+                                   "readCount" : 23728
+                                   }
+                                   ]
+    },
+    "text" : "成功",
+    "code" : "000000"
+}

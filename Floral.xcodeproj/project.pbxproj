@@ -15,6 +15,8 @@
 		63965A0820A19B2D00458AF2 /* FloralTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63965A0720A19B2D00458AF2 /* FloralTests.swift */; };
 		63965A1320A19B2E00458AF2 /* FloralUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63965A1220A19B2E00458AF2 /* FloralUITests.swift */; };
 		63965A2420A1AE7900458AF2 /* HTBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63965A2320A1AE7900458AF2 /* HTBaseViewController.swift */; };
+		9A2D824020CD5A7E002ED57E /* ResearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2D823F20CD5A7E002ED57E /* ResearchViewController.swift */; };
+		9A2D824320CD62C3002ED57E /* research.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A2D824220CD62C3002ED57E /* research.json */; };
 		9A74D11020A8433900E95F44 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A74D10F20A8433900E95F44 /* Constant.swift */; };
 		9A74D11220A8515100E95F44 /* SpecialFlowLayoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A74D11120A8515100E95F44 /* SpecialFlowLayoutCell.swift */; };
 		9ADB0BB320A1D9D0008AA595 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADB0BB220A1D9D0008AA595 /* MainViewController.swift */; };
@@ -57,6 +59,8 @@
 		63965A1220A19B2E00458AF2 /* FloralUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloralUITests.swift; sourceTree = "<group>"; };
 		63965A1420A19B2E00458AF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63965A2320A1AE7900458AF2 /* HTBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTBaseViewController.swift; sourceTree = "<group>"; };
+		9A2D823F20CD5A7E002ED57E /* ResearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResearchViewController.swift; sourceTree = "<group>"; };
+		9A2D824220CD62C3002ED57E /* research.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = research.json; sourceTree = "<group>"; };
 		9A74D10F20A8433900E95F44 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		9A74D11120A8515100E95F44 /* SpecialFlowLayoutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialFlowLayoutCell.swift; sourceTree = "<group>"; };
 		9ADB0BB220A1D9D0008AA595 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				639659F220A19B2400458AF2 /* AppDelegate.swift */,
+				9A2D824120CD627C002ED57E /* Data */,
 				63965A2020A1AC3A00458AF2 /* Classes */,
 				639659F620A19B2400458AF2 /* Main.storyboard */,
 				639659F920A19B2D00458AF2 /* Assets.xcassets */,
@@ -181,6 +186,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9A2D824120CD627C002ED57E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9A2D824220CD62C3002ED57E /* research.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		9A74D10E20A8432300E95F44 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +221,7 @@
 		9ADB0BB520A1DC26008AA595 /* Research */ = {
 			isa = PBXGroup;
 			children = (
+				9A2D823F20CD5A7E002ED57E /* ResearchViewController.swift */,
 			);
 			path = Research;
 			sourceTree = "<group>";
@@ -362,6 +376,7 @@
 			files = (
 				639659FD20A19B2D00458AF2 /* LaunchScreen.storyboard in Resources */,
 				639659FA20A19B2D00458AF2 /* Assets.xcassets in Resources */,
+				9A2D824320CD62C3002ED57E /* research.json in Resources */,
 				639659F820A19B2400458AF2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,6 +467,7 @@
 				9ADB0BBC20A33FFB008AA595 /* WallpaperViewController.swift in Sources */,
 				9A74D11220A8515100E95F44 /* SpecialFlowLayoutCell.swift in Sources */,
 				9ADB0BB320A1D9D0008AA595 /* MainViewController.swift in Sources */,
+				9A2D824020CD5A7E002ED57E /* ResearchViewController.swift in Sources */,
 				9ADB0BC020A34184008AA595 /* NavBaseViewCotroller.swift in Sources */,
 				9ADB0C0220A83FC2008AA595 /* SpecialCollectionViewFlowLayout.swift in Sources */,
 				9ADB0BBA20A33C91008AA595 /* SpecialViewController.swift in Sources */,

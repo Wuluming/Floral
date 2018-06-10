@@ -18,6 +18,7 @@ class MainViewController: UITabBarController {
     
     func setUI() {
         addViewController(childController: SpecialViewController(), title: "专题")
+        addViewController(childController: ResearchViewController(), title: "研究社")
         addViewController(childController: WallpaperViewController(), title: "壁纸")
         addViewController(childController: MeViewController(), title: "我的")
     }
