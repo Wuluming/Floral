@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		345DB4EFC557579104833109 /* Pods_Floral.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA298DAD2EF84F658EA0BBFB /* Pods_Floral.framework */; };
+		6380160120A93763007E6CE4 /* SpecialReusableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6380160020A93763007E6CE4 /* SpecialReusableHeaderView.swift */; };
+		6380160420A9482F007E6CE4 /* WallModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6380160320A9482F007E6CE4 /* WallModel.swift */; };
+		6380160720A956E4007E6CE4 /* wall.json in Resources */ = {isa = PBXBuildFile; fileRef = 6380160620A956E4007E6CE4 /* wall.json */; };
 		639659F320A19B2400458AF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639659F220A19B2400458AF2 /* AppDelegate.swift */; };
 		639659F820A19B2400458AF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 639659F620A19B2400458AF2 /* Main.storyboard */; };
 		639659FA20A19B2D00458AF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 639659F920A19B2D00458AF2 /* Assets.xcassets */; };
@@ -46,6 +49,9 @@
 
 /* Begin PBXFileReference section */
 		31CD0D605614ACCBE644579C /* Pods-Floral.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Floral.release.xcconfig"; path = "Pods/Target Support Files/Pods-Floral/Pods-Floral.release.xcconfig"; sourceTree = "<group>"; };
+		6380160020A93763007E6CE4 /* SpecialReusableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialReusableHeaderView.swift; sourceTree = "<group>"; };
+		6380160320A9482F007E6CE4 /* WallModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallModel.swift; sourceTree = "<group>"; };
+		6380160620A956E4007E6CE4 /* wall.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wall.json; sourceTree = "<group>"; };
 		639659EF20A19B2400458AF2 /* Floral.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Floral.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		639659F220A19B2400458AF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		639659F720A19B2400458AF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -108,6 +114,29 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		638015FF20A9353B007E6CE4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6380160220A9481A007E6CE4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6380160320A9482F007E6CE4 /* WallModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6380160520A956E4007E6CE4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6380160620A956E4007E6CE4 /* wall.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		639659E620A19B2300458AF2 = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +194,7 @@
 		63965A2020A1AC3A00458AF2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				6380160520A956E4007E6CE4 /* Resources */,
 				9A74D10E20A8432300E95F44 /* Base */,
 				63965A2320A1AE7900458AF2 /* HTBaseViewController.swift */,
 				9ADB0BBF20A34184008AA595 /* NavBaseViewCotroller.swift */,
@@ -214,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				9ADB0BBB20A33FFB008AA595 /* WallpaperViewController.swift */,
+				6380160220A9481A007E6CE4 /* Model */,
 			);
 			path = Wallpaper;
 			sourceTree = "<group>";
@@ -230,7 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				9ADB0BB920A33C91008AA595 /* SpecialViewController.swift */,
-				9ADB0C0020A83DFC008AA595 /* Model */,
+				638015FF20A9353B007E6CE4 /* Model */,
 				9ADB0BFF20A83DFC008AA595 /* Views */,
 			);
 			path = Special;
@@ -256,15 +287,9 @@
 			children = (
 				9ADB0C0120A83FC2008AA595 /* SpecialCollectionViewFlowLayout.swift */,
 				9A74D11120A8515100E95F44 /* SpecialFlowLayoutCell.swift */,
+				6380160020A93763007E6CE4 /* SpecialReusableHeaderView.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		9ADB0C0020A83DFC008AA595 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -375,6 +400,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				639659FD20A19B2D00458AF2 /* LaunchScreen.storyboard in Resources */,
+				6380160720A956E4007E6CE4 /* wall.json in Resources */,
 				639659FA20A19B2D00458AF2 /* Assets.xcassets in Resources */,
 				9A2D824320CD62C3002ED57E /* research.json in Resources */,
 				639659F820A19B2400458AF2 /* Main.storyboard in Resources */,
@@ -441,12 +467,14 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -463,7 +491,9 @@
 				9ADB0BBE20A340EB008AA595 /* MeViewController.swift in Sources */,
 				63965A2420A1AE7900458AF2 /* HTBaseViewController.swift in Sources */,
 				9A74D11020A8433900E95F44 /* Constant.swift in Sources */,
+				6380160420A9482F007E6CE4 /* WallModel.swift in Sources */,
 				639659F320A19B2400458AF2 /* AppDelegate.swift in Sources */,
+				6380160120A93763007E6CE4 /* SpecialReusableHeaderView.swift in Sources */,
 				9ADB0BBC20A33FFB008AA595 /* WallpaperViewController.swift in Sources */,
 				9A74D11220A8515100E95F44 /* SpecialFlowLayoutCell.swift in Sources */,
 				9ADB0BB320A1D9D0008AA595 /* MainViewController.swift in Sources */,
@@ -644,18 +674,17 @@
 			baseConfigurationReference = D8C47F8E6576B446131E8753 /* Pods-Floral.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MFHMZ56BFH;
 				INFOPLIST_FILE = Floral/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = dd.Floral;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaowu.Flora;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -664,18 +693,17 @@
 			baseConfigurationReference = 31CD0D605614ACCBE644579C /* Pods-Floral.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MFHMZ56BFH;
 				INFOPLIST_FILE = Floral/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = dd.Floral;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaowu.Flora;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -686,11 +714,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FloralTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dd.FloralTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -706,11 +730,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FloralTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dd.FloralTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -725,11 +745,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FloralUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dd.FloralUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -744,11 +760,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FloralUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dd.FloralUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

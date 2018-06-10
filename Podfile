@@ -6,5 +6,5 @@ target 'Floral' do
     pod 'SnapKit', '~> 4.0.0' 
     pod 'Alamofire', '~> 4.5.1'
     pod 'Kingfisher', '~> 4.3.1'
-    
+    pod 'SwiftyJSON', '~> 4.0.0'
 end

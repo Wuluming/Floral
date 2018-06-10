@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 import Kingfisher
 
-class SpecialViewController: HTBaseViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class SpecialViewController: HTBaseViewController, UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     
     var collectionView: UICollectionView!
     fileprivate var dataCount = 20
@@ -30,19 +30,12 @@ class SpecialViewController: HTBaseViewController, UICollectionViewDelegate, UIC
         }
        
         collectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
+        collectionView.backgroundColor = UIColor.white
         collectionView.delegate = self
         collectionView.dataSource = self
         view.addSubview(collectionView)
         collectionView.register(SpecialFlowLayoutCell.classForCoder(), forCellWithReuseIdentifier: "cell")
-        
-        
-//        collectionView.snp.makeConstraints { (make) in
-//            make.top.equalToSuperview().offset(0)
-//            make.left.equalToSuperview().offset(0)
-//            make.right.equalToSuperview().offset(0)
-//            make.bottom.equalToSuperview().offset(0)
-//        }
-        
+        collectionView.register(SpecialReusableHeaderView.classForCoder(), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "header")
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -50,7 +43,7 @@ class SpecialViewController: HTBaseViewController, UICollectionViewDelegate, UIC
         let collectCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! SpecialFlowLayoutCell
         let width = String(Float(collectCell.imageview.frame.width))
         let height = String(Float(collectCell.imageview.frame.height))
-        
+
         if let url = URL(string: "https://placebeard.it/\(width)/\(height)") {
             collectCell.imageview.kf.setImage(with: url)
         }
@@ -58,8 +51,21 @@ class SpecialViewController: HTBaseViewController, UICollectionViewDelegate, UIC
         return collectCell
     }
     
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let v = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "header", for: indexPath)
+        return v
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        return CGSize(width: SCREEN_WIDTH, height: 50)
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return dataCount
+    }
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+         return 1
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -67,6 +73,7 @@ class SpecialViewController: HTBaseViewController, UICollectionViewDelegate, UIC
         print(indexPath.row)
     }
     
+    //mark SpecialViewController -设置
     func setNav() {
         navigationItem.leftBarButtonItem = UIBarButtonItem(customView: menuBtn)
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "签到", style: .done, target: self, action: #selector(SpecialViewController.signClick))
