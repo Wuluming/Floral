@@ -18,6 +18,7 @@
 		63965A0820A19B2D00458AF2 /* FloralTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63965A0720A19B2D00458AF2 /* FloralTests.swift */; };
 		63965A1320A19B2E00458AF2 /* FloralUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63965A1220A19B2E00458AF2 /* FloralUITests.swift */; };
 		63965A2420A1AE7900458AF2 /* HTBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63965A2320A1AE7900458AF2 /* HTBaseViewController.swift */; };
+		63C2582A20CE7D830054EE53 /* Research.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C2582920CE7D830054EE53 /* Research.swift */; };
 		9A2D824020CD5A7E002ED57E /* ResearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2D823F20CD5A7E002ED57E /* ResearchViewController.swift */; };
 		9A2D824320CD62C3002ED57E /* research.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A2D824220CD62C3002ED57E /* research.json */; };
 		9A74D11020A8433900E95F44 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A74D10F20A8433900E95F44 /* Constant.swift */; };
@@ -65,6 +66,7 @@
 		63965A1220A19B2E00458AF2 /* FloralUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloralUITests.swift; sourceTree = "<group>"; };
 		63965A1420A19B2E00458AF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63965A2320A1AE7900458AF2 /* HTBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTBaseViewController.swift; sourceTree = "<group>"; };
+		63C2582920CE7D830054EE53 /* Research.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Research.swift; sourceTree = "<group>"; };
 		9A2D823F20CD5A7E002ED57E /* ResearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResearchViewController.swift; sourceTree = "<group>"; };
 		9A2D824220CD62C3002ED57E /* research.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = research.json; sourceTree = "<group>"; };
 		9A74D10F20A8433900E95F44 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
@@ -208,6 +210,14 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		63C2582820CE7D5B0054EE53 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				63C2582920CE7D830054EE53 /* Research.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		7AAA7DC04A0F578B3FBA62A5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,6 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				9A2D823F20CD5A7E002ED57E /* ResearchViewController.swift */,
+				63C2582820CE7D5B0054EE53 /* Model */,
 			);
 			path = Research;
 			sourceTree = "<group>";
@@ -490,6 +501,7 @@
 			files = (
 				9ADB0BBE20A340EB008AA595 /* MeViewController.swift in Sources */,
 				63965A2420A1AE7900458AF2 /* HTBaseViewController.swift in Sources */,
+				63C2582A20CE7D830054EE53 /* Research.swift in Sources */,
 				9A74D11020A8433900E95F44 /* Constant.swift in Sources */,
 				6380160420A9482F007E6CE4 /* WallModel.swift in Sources */,
 				639659F320A19B2400458AF2 /* AppDelegate.swift in Sources */,
@@ -679,7 +691,10 @@
 				DEVELOPMENT_TEAM = MFHMZ56BFH;
 				INFOPLIST_FILE = Floral/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiaowu.Flora;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -698,7 +713,10 @@
 				DEVELOPMENT_TEAM = MFHMZ56BFH;
 				INFOPLIST_FILE = Floral/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiaowu.Flora;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -714,7 +732,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FloralTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = dd.FloralTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -730,7 +752,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FloralTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = dd.FloralTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -745,7 +771,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FloralUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = dd.FloralUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -760,7 +790,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FloralUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = dd.FloralUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

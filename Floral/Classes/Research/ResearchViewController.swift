@@ -31,8 +31,11 @@ class ResearchViewController: HTBaseViewController {
     
     func loadData() {
         let path = Bundle.main.path(forResource: "research", ofType: "json")
+        let data = NSData.init(contentsOfFile: path!)
         
+        let dic:NSDictionary = try! JSONSerialization.jsonObject(with: (data! as NSData) as Data, options: JSONSerialization.ReadingOptions.mutableLeaves) as! NSDictionary
         
+        print("xxxxx\(dic)xxxx")
     }
 }
 
